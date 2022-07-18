@@ -1,0 +1,10 @@
+package java05.array;
+
+public class Prob02_Frequency {
+	public static void main(String[] args) {
+		//빈도수 구하기
+		int[] intArray = {3,7,2,5,7,7,9,2,8,1,1,5,3};
+		
+		
+	}
+}
