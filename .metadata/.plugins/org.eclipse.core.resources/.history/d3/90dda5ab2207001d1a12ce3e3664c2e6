@@ -1,0 +1,12 @@
+package com.ssafy.ws.step2;
+
+import java.util.Arrays;
+
+public class ArraryTest {
+	public static void main(String[] args) {
+		
+		int[] iArr = new int[] {1,2,3,4,5,6};
+		
+		System.out.println(Arrays.toString(iArr));
+	}//end main()
+}//end class

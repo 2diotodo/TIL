@@ -1,0 +1,23 @@
+package com.ssafy.ws.step2;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class AppleTree {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		
+		int[][] iArr = new int[n][n];
+		
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				iArr[i][j] = (int)(Math.random()*100);
+				System.out.print(iArr[i][j]);
+			}//end for(j)
+			System.out.println();
+		}//end for(i)
+		
+	}//end main()
+}//end class
