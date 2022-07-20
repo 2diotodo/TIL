@@ -9,7 +9,7 @@ public class DigitTest1 {
 		int n = sc.nextInt();
 		int line = 1;
 		
-		for(int i=1; line>=n ;i++) {
+		for(int i=1;line>=n ;i++) {
 			line += i;
 		}
 		

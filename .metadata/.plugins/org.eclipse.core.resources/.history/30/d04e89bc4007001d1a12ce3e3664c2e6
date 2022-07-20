@@ -7,9 +7,9 @@ public class DigitTest1 {
 		Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
-		int line = 1;
+		int line = 0;
 		
-		for(int i=1; line>=n ;i++) {
+		for(int i=1;line>n ;i++) {
 			line += i;
 		}
 		
