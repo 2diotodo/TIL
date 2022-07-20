@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="com.ssafy.modifier02.Student"/>
+<fullyQualifiedTypeName name="com.ssafy.ws.step2.Movie"/>
+<fullyQualifiedTypeName name="com.ssafy.hs.step2.User"/>
 </qualifiedTypeNameHistroy>
