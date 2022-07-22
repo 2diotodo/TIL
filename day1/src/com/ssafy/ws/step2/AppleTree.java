@@ -20,6 +20,31 @@ public class AppleTree {
 			System.out.println();
 		}//end for(i)
 		
+		//delta row
+		int[] dr = new int[] {-1,1,0,0}; //dr 먼저 선언 후에도 쓸 수있는 초기화형식
+		int[] dc = {0,0,-1,1}; //처음선언할때만 가능한 초기화형식
+		
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				//현재자리도 영양분 포함
+				int nutrition = iArr[i][j];
+				
+				//4방향을 파악하는 것
+				for(int d=0;d<4; i++) {
+					int nr = i+dr[d];
+					int nc = j+dc[d];
+					
+					if(nr >= 0 && nr<n && nc>=0 && nc<n) {
+						nutrition += iArr[nr][nc];
+					}
+				}
+				if(max>=nutrition) {
+					System.out.println(max);
+				}
+				
+			}
+		}
+		
 		//배열 탐색
 		for(int i=0; i<n; i++) {
 			for(int j=0; j<n; j++) {

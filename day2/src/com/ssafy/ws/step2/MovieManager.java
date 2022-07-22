@@ -3,7 +3,9 @@ package com.ssafy.ws.step2;
 import java.util.Arrays;
 
 public class MovieManager {
-	Movie[] movies = new Movie[100];
+	
+	private static final int MAX_SIZE = 100;
+	Movie[] movies = new Movie[MAX_SIZE];
 	int size = 0;
 
 	public MovieManager() {
@@ -25,6 +27,16 @@ public class MovieManager {
 //		}
 //			return mov;
 //	}
+	//방법 1. for문 이용
+	public Movie[] getList2() {
+		Movie[] mov = new Movie[size];
+		for(int i=0; i<size; i++) {
+			mov[i] = movies[i];
+		}
+		return movies;
+	}
+	
+	//방법 2. Arrays.copyOfRange 이용
 	public Movie[] getList(){
 		return Arrays.copyOfRange(movies,0,size);
 	}

@@ -1,13 +1,23 @@
 package com.ssafy.ws.step3;
 
+import java.util.Scanner;
+
 public class DigitTest1 {
 	public static void main(String[] args) {
-		int n = 1;
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
 		
-		int line = 1;
+		int cnt = 1;
 		
-		for(int i=1; line>=n ;i++) {
-			line += i;
+		for(int i=0; i<n ;i++) {
+			for(int j=0; j<i; j++) {
+				System.out.printf("%3s", " ");
+			}
+			
+			for(int j=0; j<n-i; j++) {
+				System.out.printf("%3d",cnt++);
+			}
+			System.out.println();
 		}
 		
 
