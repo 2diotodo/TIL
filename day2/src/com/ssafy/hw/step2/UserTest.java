@@ -1,5 +1,9 @@
 package com.ssafy.hw.step2;
 
+<<<<<<< HEAD
+=======
+import java.util.Arrays;
+>>>>>>> fd2253881a61e7b54c9f382276d93cb54da42c5f
 import java.util.Scanner;
 
 public class UserTest {
@@ -28,7 +32,11 @@ public class UserTest {
 				User user = new User(id, password, name, email, age);
 				userm.add(user);
 				//이름만 반환하는 메소드
+<<<<<<< HEAD
 				userm.getList();
+=======
+				userm.getList3();
+>>>>>>> fd2253881a61e7b54c9f382276d93cb54da42c5f
 
 			} else if (sel == 2) {
 				//사용자 이름 검색 구현
@@ -46,8 +54,16 @@ public class UserTest {
 			} else if(sel == 3) {
 				//UserManager객체 size를 이용해 사용자수 출력
 				System.out.println("등록된 사용자 수를 출력합니다.\n"+userm.size);
+<<<<<<< HEAD
 				System.out.println(userm.list);
 			}
 		} while (sel != 0);
 	}//end main()
 }//end class
+=======
+				System.out.println(Arrays.toString(userm.nameList));
+			}
+		} while (sel != 0);
+	}
+}
+>>>>>>> fd2253881a61e7b54c9f382276d93cb54da42c5f

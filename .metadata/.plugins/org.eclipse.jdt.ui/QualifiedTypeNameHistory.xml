@@ -6,6 +6,7 @@
 <fullyQualifiedTypeName name="com.ssafy.ws.step2.MovieManager"/>
 <fullyQualifiedTypeName name="com.ssafy.ws.step2.Movie"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
@@ -13,4 +14,14 @@
 <fullyQualifiedTypeName name="com.ssafy.hw.step2.UserManager"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
+=======
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.ssafy.hw.step2.User"/>
+<fullyQualifiedTypeName name="pairproject.Excercise"/>
+<fullyQualifiedTypeName name="pairproject.ExcerciseManager"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+>>>>>>> fd2253881a61e7b54c9f382276d93cb54da42c5f
 </qualifiedTypeNameHistroy>

@@ -22,6 +22,6 @@ public class Book {
 	}
 	
 	public String toString(){
-		return String.format("%-8s | %-10s | %-4s | %-10s | %-5d | %-10s\n", isbn, title, author, publisher, price, desc);
+		return String.format("%-8s | %-10s\t | %-4s | %-10s | %-5d | %-10s\n", isbn, title, author, publisher, price, desc);
 	}
 }

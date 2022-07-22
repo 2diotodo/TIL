@@ -6,13 +6,19 @@ public class User {
 	private String name;
 	private String email;
 	private int age;
+<<<<<<< HEAD
 	
 	//기본 생성자
 	public User() {
+=======
+
+	// 기본 생성자
+	private User() {
+>>>>>>> fd2253881a61e7b54c9f382276d93cb54da42c5f
 
 	}
-	
-	//멤버 변수 초기화를 위해 인자를 받는 생성자
+
+	// 멤버 변수 초기화를 위해 인자를 받는 생성자
 	public User(String id, String password, String name, String email, int age) {
 		this.id = id;
 		this.password = password;
@@ -60,11 +66,19 @@ public class User {
 	public void setAge(int age) {
 		this.age = age;
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> fd2253881a61e7b54c9f382276d93cb54da42c5f
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", password=" + password + ", name=" + name + ", email=" + email + ", age=" + age
 				+ "]";
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> fd2253881a61e7b54c9f382276d93cb54da42c5f
 }
