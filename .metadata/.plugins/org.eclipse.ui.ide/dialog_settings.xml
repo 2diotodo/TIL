@@ -5,6 +5,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\smart_study\ssafy\workspace\day2"/>
 			<item value="C:\Users\multicampus\Desktop\2diot\TIL\day2"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

@@ -8,7 +8,7 @@ public class User {
 	private int age;
 	
 	//기본 생성자
-	private User() {
+	public User() {
 
 	}
 	
@@ -61,5 +61,10 @@ public class User {
 		this.age = age;
 	}
 	
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", password=" + password + ", name=" + name + ", email=" + email + ", age=" + age
+				+ "]";
+	}
 	
 }
