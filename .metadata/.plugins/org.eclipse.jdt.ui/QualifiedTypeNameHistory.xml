@@ -2,5 +2,7 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.math.BigDecimal"/>
 <fullyQualifiedTypeName name="newstudy.Money"/>
+<fullyQualifiedTypeName name="com.ssafy.ws.step2.Movie"/>
+<fullyQualifiedTypeName name="com.ssafy.ws.step2.SeriesMovie"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

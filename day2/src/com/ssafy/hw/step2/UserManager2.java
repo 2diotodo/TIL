@@ -29,7 +29,7 @@ public class UserManager2 {
 		
 		for(int i=0; i<this.size; i++) {
 			// 리스트안의 객체가 VipUser 클래스의 인스턴스인지 검사
-			if(!(userList[i].getId().contains("vip"))) {
+			if(!(userList[i] instanceof VipUser)) {
 				cnt++;
 			}
 		}
@@ -41,7 +41,7 @@ public class UserManager2 {
 		
 		for(int i=0, index = 0; i<this.size; i++) {
 			// 리스트안의 객체가 VipUser 클래스의 인스턴스인지 검사
-			if(!(userList[i].getId().contains("vip"))) {
+			if(!(userList[i] instanceof VipUser)) {
 				res[index++] = userList[i];
 			}
 		}
@@ -57,7 +57,7 @@ public class UserManager2 {
 		
 		for(int i=0; i<this.size; i++) {
 			// 리스트안의 객체가 VipUser 클래스의 인스턴스인지 검사
-			if(userList[i].getId().contains("vip")) {
+			if(userList[i] instanceof VipUser) {
 				cnt++;
 			}
 		}
@@ -69,7 +69,7 @@ public class UserManager2 {
 		
 		for(int i=0, index = 0; i<this.size; i++) {
 			// 리스트안의 객체가 VipUser 클래스의 인스턴스인지 검사
-			if(userList[i].getId().contains("vip")) {
+			if(userList[i] instanceof VipUser) {
 				res[index++] = (VipUser)userList[i];
 			}
 		}

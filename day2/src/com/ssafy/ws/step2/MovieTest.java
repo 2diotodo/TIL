@@ -1,11 +1,13 @@
 package com.ssafy.ws.step2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MovieTest {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+//		Scanner sc = new Scanner(System.in);
 		MovieManager mv = new MovieManager();
+		/*
 		int sel;
 		do {
 			System.out.println("원하는 번호 입력");
@@ -48,18 +50,36 @@ public class MovieTest {
 				}
 			}
 		}while(sel!=0);
+		*/
+
+		Movie movie1 = new Movie();
+		// 하나씩 넣기
+		movie1.setId(001);
+		movie1.setTitle("다크나이트");
+		movie1.setDirector("크리스토퍼 놀란");
+		movie1.setGenre("액션");
+		movie1.setRunningTime(152);
+
+		// 생성자 이용해서 넣기
+		Movie movie2 = new Movie(002, "광해", "추창민", "역사", 131);
+		SeriesMovie smovie1 = new SeriesMovie(003, "반지의 제왕", "피터 잭슨", "판타지", 178, 1, "반지 원정대");
+		SeriesMovie smovie2 = new SeriesMovie(004, "반지의 제왕", "피터 잭슨", "판타지", 179, 2, "두개의 탑");
+		SeriesMovie smovie3 = new SeriesMovie(005, "반지의 제왕", "피터 잭슨", "판타지", 199, 3, "왕의 귀환");
+
+		mv.add(movie1);
+		mv.add(movie2);
+		mv.add(smovie1);
+		mv.add(smovie2);
+		mv.add(smovie3);
 		
-		//하나씩 넣기
-//		movie1.id = 001;
-//		movie1.title = "다크나이트";
-//		movie1.director = "크리스토퍼 놀란";
-//		movie1.genre = "액션";
-//		movie1.runningTime = 152;
-		
-		//생성자 이용해서 넣기
-//		Movie movie2 = new Movie(002, "광해", "추창민", "역사", 131);
-		
-		
+		System.out.println(Arrays.toString(mv.searchByTitles("다크")));
+
+		System.out.println(Arrays.toString(mv.getSeriesMovie()));
+		System.out.println("============================");
+		System.out.println(Arrays.toString(mv.getMovie()));
+		System.out.println("============================");
+		System.out.println(mv.getRunningTimeAvg());
+
 //		System.out.println("관리번호 : " + movie1.id);
 //		System.out.println("영화제목 : " + movie1.title);
 //		System.out.println("감독 : " + movie1.director);
@@ -69,5 +89,5 @@ public class MovieTest {
 //		System.out.println("영화제목 : " + movie2.title);
 //		System.out.println("감독 : " + movie2.director);
 //		System.out.println("상영시간 : " + movie2.runningTime + "분");
-	}//end main()
-}//end class
+	}// end main()
+}// end class
