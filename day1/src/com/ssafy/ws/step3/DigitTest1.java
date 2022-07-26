@@ -33,6 +33,6 @@ public class DigitTest1 {
 			}
 			System.out.println();
 		}
-		
+		System.out.println(Math.round((double)5/2));
 	}//end main()
 }//end class
