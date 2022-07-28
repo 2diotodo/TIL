@@ -4,5 +4,15 @@
 <fullyQualifiedTypeName name="newstudy.Money"/>
 <fullyQualifiedTypeName name="com.ssafy.ws.step2.Movie"/>
 <fullyQualifiedTypeName name="com.ssafy.ws.step2.SeriesMovie"/>
+<fullyQualifiedTypeName name="com.ssafy.hw.step2.User"/>
+<fullyQualifiedTypeName name="com.ssafy.hw.step2.IUserManager"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.ssafy.ws.step2.MovieManagerImpl"/>
+<fullyQualifiedTypeName name="com.ssafy.ws.step2.IMovieManager"/>
+<fullyQualifiedTypeName name="com.ssafy.hw.step2.NameNotFoundException"/>
 </qualifiedTypeNameHistroy>
