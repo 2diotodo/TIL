@@ -11,7 +11,11 @@ public interface IUserManager {
 	VipUser[] getVipUsers();
 
 	// 예외를 던진다고 선언
-	User[] searchByName(String name) ;
+	User[] searchByName(String name) throws NameNotFoundException;
 
 	double getAgeAvg();
+	
+	void saveData();
+	
+	void loadData();
 }

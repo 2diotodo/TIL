@@ -3,7 +3,7 @@ package com.ssafy.ws.step2;
 import java.util.Arrays;
 
 public class MovieTest {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws TitleNotFoundException {
 		Movie movie1 = new Movie();
 		// 하나씩 넣기
 		movie1.setId(001);
@@ -25,7 +25,7 @@ public class MovieTest {
 		mv.add(smovie2);
 		mv.add(smovie3);
 		
-		System.out.println(Arrays.toString(mv.searchBytitle("다크")));
+		System.out.println(Arrays.toString(mv.searchBytitle("황")));
 		System.out.println("============================");
 		System.out.println(Arrays.toString(mv.getSeriesMovies()));
 		System.out.println("============================");
