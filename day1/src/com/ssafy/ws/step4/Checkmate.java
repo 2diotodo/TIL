@@ -35,7 +35,7 @@ public class Checkmate {
 							}
 							
 						} else {
-							System.out.println("#" + test + " " + 0);			//1,2 어느경우도 아니라면 못잡는 경우임.
+							System.out.println("#" + test + " " + 0);			//1,2 어느경우도 아니라면 못잡는 경우.
 							break jLoop;
 						}
 

@@ -5,10 +5,16 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+<<<<<<< HEAD
 			<item value="C:\smart_study\ssafy\workspace\day1"/>
+=======
+			<item value="C:\Users\multicampus\Desktop\2diot\TIL\day4"/>
+			<item value="C:\Users\multicampus\Desktop\2diot\TIL\day1"/>
+			<item value="C:\Users\multicampus\Desktop\2diot\TIL\day2"/>
+			<item value="C:\Users\multicampus\Desktop\2diot\TIL\day3"/>
+>>>>>>> 7cf0d15436c71b40e55fce492047f617728b5d6e
 			<item value="C:\smart_study\ssafy\workspace\day3"/>
 			<item value="C:\smart_study\ssafy\workspace\day2"/>
-			<item value="C:\Users\multicampus\Desktop\2diot\TIL\day2"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
