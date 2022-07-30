@@ -3,7 +3,6 @@ package com.ssafy.ws.step2;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class MovieManagerImpl implements IMovieManager {
 	private final int MAX_SIZE = 100;
 
@@ -15,10 +14,10 @@ public class MovieManagerImpl implements IMovieManager {
 	// 싱글톤패턴 기본생성자
 	private MovieManagerImpl() {
 	}
-	
+
 	public static IMovieManager getInstance() {
 		return instance;
-		
+
 	}
 
 	@Override
@@ -46,24 +45,29 @@ public class MovieManagerImpl implements IMovieManager {
 				list.add(movieList.get(i));
 			}
 		}
-		
-		// 주어진 단어를 포함하는 사용자가 없으면 null을 반환한다.
-		if(list.size() == 0)
-			return null;
-		
+
+		// 주어진 단어를 포함하는 사용자가 없으면 예외발생
+		try {
+			if (list.size() == 0)
+				throw new TitleNotFoundException(title);
+
+		} catch (TitleNotFoundException e) {
+			e.printStackTrace();
+		}
+
 		Movie[] res = new Movie[list.size()];
 
 		return list.toArray(res);
 	}
 
-	//일반영화 가져오기
+	// 일반영화 가져오기
 	@Override
 	public Movie[] getMovies() {
 		List<Movie> list = new ArrayList<>();
 
 		for (int i = 0; i < movieList.size(); i++) {
 			if (!(movieList.get(i) instanceof SeriesMovie)) {
-				
+
 				list.add(movieList.get(i));
 			}
 		}
@@ -73,7 +77,7 @@ public class MovieManagerImpl implements IMovieManager {
 		return list.toArray(res);
 	}
 
-	//시리즈영화 가져오기
+	// 시리즈영화 가져오기
 	@Override
 	public SeriesMovie[] getSeriesMovies() {
 		List<Movie> list = new ArrayList<>();
@@ -91,8 +95,8 @@ public class MovieManagerImpl implements IMovieManager {
 	@Override
 	public double getRunningTimeAvg() {
 		int sum = 0;
-		
-		for(int i=0; i<movieList.size(); i++) {
+
+		for (int i = 0; i < movieList.size(); i++) {
 			sum += movieList.get(i).getRunningTime();
 		}
 		return sum / movieList.size();
