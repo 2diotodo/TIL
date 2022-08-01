@@ -1,37 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.math.BigDecimal"/>
-<fullyQualifiedTypeName name="newstudy.Money"/>
-<fullyQualifiedTypeName name="com.ssafy.ws.step2.Movie"/>
-<fullyQualifiedTypeName name="com.ssafy.ws.step2.SeriesMovie"/>
-<fullyQualifiedTypeName name="com.ssafy.hw.step2.User"/>
-<fullyQualifiedTypeName name="com.ssafy.hw.step2.IUserManager"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<<<<<<< HEAD
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-=======
-<fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="com.ssafy.ws.step2.MovieManagerImpl"/>
-<fullyQualifiedTypeName name="com.ssafy.ws.step2.IMovieManager"/>
-<fullyQualifiedTypeName name="com.ssafy.hw.step2.NameNotFoundException"/>
-<<<<<<< HEAD
->>>>>>> 7cf0d15436c71b40e55fce492047f617728b5d6e
-=======
-<fullyQualifiedTypeName name="pairproject.NotFoundExceptions"/>
-<fullyQualifiedTypeName name="pairproject.ExerciseClient"/>
-<fullyQualifiedTypeName name="pairproject.ExerciseManager"/>
-<fullyQualifiedTypeName name="pairproject.IExerciseUser"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="com.ssafy.ws.step2.TitleNotFoundException"/>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
-<fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
-<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-<fullyQualifiedTypeName name="java.io.FileInputStream"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
->>>>>>> c86b804c9a94242505031e6a958471ca86e22db7
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="basic.MyClass"/>
 </qualifiedTypeNameHistroy>
