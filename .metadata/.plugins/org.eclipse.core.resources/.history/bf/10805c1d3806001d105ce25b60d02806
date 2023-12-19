@@ -1,0 +1,9 @@
+package java01.intro;
+
+public class Intro02_Comment {
+	public static void main(String[] args) {
+		//해당 줄을 주석처리.
+		
+		
+	}
+}

@@ -1,0 +1,11 @@
+package java01.intro;
+
+public class Intro03_PrintTest {
+	public static void main(String[] args) {
+		//한 줄 출력을 해보자.
+		System.out.print("Hello World");
+		
+		//println을 써보자.
+		System.out.println("Hello World");
+	}
+}

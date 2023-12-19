@@ -1,0 +1,24 @@
+package com.ssafy.ws.step2;
+
+import java.util.Scanner;
+
+public class AppleTree {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		//크기가 n*n인 2차원 배열 생성
+		int[][] iArr = new int[n][n];
+		
+		//2차원 배열 입력
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				iArr[i][j] = sc.nextInt();
+				
+			}//end for(j)
+			System.out.println();
+		}//end for(i)
+		
+		
+	}//end main()
+}//end class

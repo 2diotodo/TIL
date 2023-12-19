@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Example user template template
 ### Example user template
 
@@ -8,3 +9,7 @@ out
 gen
 .gradle
 build
+=======
+/.metadata/
+/.recommenders/
+>>>>>>> aa6e57784694ad7c75de5a0ba3469d1f50ff79c2
