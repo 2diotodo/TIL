@@ -6,13 +6,19 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 // 인접리스트 최대거리의 최소값
-public class Main {
+public class List_최소최대거리_hynauto {
 
-    public static class Node{
-        int vertex;
+    public static class Node implements Comparable<Node> {
+        int vertex, distance;
 
-        public Node(int vertex){
+        public Node(int vertex, int distance)
+        {
             this.vertex = vertex;
+            this.distance = distance;
+        }
+        @Override
+        public int compareTo(Node o){
+            return Integer.compare(this.distance, o.distance);
         }
     }
         static final int INF = Integer.MAX_VALUE;
@@ -21,22 +27,26 @@ public class Main {
             int[] distances = new int[n + 1];
             Arrays.fill(distances, INF);
 
-            PriorityQueue<Node> pq = new PriorityQueue<>(Comparator.comparingInt(node -> distances[node.vertex]));
+            PriorityQueue<Node> pq = new PriorityQueue<>();
             for (int i = 0; i < k; i++) {
                 int startNode = i + 1;
                 distances[startNode] = 0;
-                pq.offer(new Node(startNode));
+                pq.offer(new Node(startNode,0));
             }
 
             while (!pq.isEmpty()) {
                 Node current = pq.poll();
 
+                if (current.distance > distances[current.vertex]) {
+                    continue;
+                }
+
                 for (Node neighbor : graph.get(current.vertex)) {
-                    int newDistance = distances[current.vertex] + 1;
+                    int newDistance = current.distance + 1; // 가중치를 1로 설정
 
                     if (newDistance < distances[neighbor.vertex]) {
                         distances[neighbor.vertex] = newDistance;
-                        pq.offer(new Node(neighbor.vertex));
+                        pq.offer(new Node(neighbor.vertex, newDistance));
                     }
                 }
             }
@@ -64,8 +74,8 @@ public class Main {
             int u = Integer.parseInt(st.nextToken());
             int v = Integer.parseInt(st.nextToken());
 
-            graph.get(u).add(new Node(v));
-            graph.get(v).add(new Node(u));
+            graph.get(u).add(new Node(v,1));
+            graph.get(v).add(new Node(u,1));
         }
 
         int res = findMinMaxDistance(N,M,K,graph);
